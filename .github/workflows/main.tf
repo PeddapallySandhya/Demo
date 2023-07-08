@@ -16,7 +16,13 @@ terraform {
 }
 
 provider "snowflake" {
+  account   = "wb13532.ap-southeast-1"
+  username  = "Sandhya"
+  password  = "Sandhya7@"
+  warehouse = "COMPUTE_WH"
 }
+
+
 
 resource "snowflake_database" "demo_db" {
   name    = "DEMO_DB"
